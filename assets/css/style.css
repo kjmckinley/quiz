@@ -1,0 +1,19 @@
+/* GEEK-BIZ QUIZ */
+
+/* This .css file adds styling to the index.html file wich houses the framework for the initial welcome and the questions themselves */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling for mainQuizBox */
+#mainQuizBox {
+    position: absolute;
+    text-align: center;
+    margin: 5% 20%;
+    width: 60%;
+    height: 60%;
+    border: 10px solid rgb(172, 60, 60);
+}
