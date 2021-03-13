@@ -29,8 +29,12 @@
     margin: 20px auto;
 }
 
+#quizQuestion {
+    margin: 20px;
+}
+
 .mainQuizBox #timer {
     float: right;
-    margin-right: 5px;
+    margin: 5px;
 }
 
