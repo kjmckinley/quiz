@@ -8,12 +8,29 @@
     box-sizing: border-box;
 }
 
-/* styling for mainQuizBox */
-#mainQuizBox {
+/* styling for mainQuizBox class */
+.mainQuizBox {
     position: absolute;
     text-align: center;
     margin: 5% 20%;
     width: 60%;
     height: 60%;
     border: 10px solid rgb(172, 60, 60);
+    border-radius: 10px;
 }
+
+/* styling for the 'Start' button id */
+#startClock {
+    background-color: #116390;
+    color: rgb(226, 221, 221);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 20px auto;
+}
+
+.mainQuizBox #timer {
+    float: right;
+    margin-right: 5px;
+}
+
