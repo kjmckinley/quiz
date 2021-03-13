@@ -42,7 +42,8 @@ var questionAray = [
         options: ["The most relaxed rule in Starfleet", 
                   "A rule that prevents crew members from speaking with certain species such as the Klingons",
                   "A guiding principal to not interfere in the affairs of an underdeveloped civilization",
-                  "A charter of sorts that guides the crew to their next destination for the sake of exploration"],
+                  "A charter of sorts that guides the crew to their next destination for the sake of exploration"
+                ],
         answer: "A guiding principal to not interfere in the affairs of an underdeveloped species",
         explainRight: "Right You Are! Starfleet believes that developing civilizations should do so natually and without interference.",
         explainWrong: ""
@@ -52,7 +53,11 @@ var questionAray = [
     {
         header: "Which of the Following Options is MOST Correct?:",
         question: "Where did the film 'Jurassic Park' fictionally take place?",
-        options: ["Isla Nublar", "Isla Sorna", "Isla Nublar & Isla Sorna", "An island off the US coast"],
+        options: ["Isla Nublar",
+                  "Isla Sorna", 
+                  "Isla Nublar & Isla Sorna", 
+                  "An island off the US coast"
+                ],
         answer: "Isla Nublar",
         explainRight: "Good for you! While the Jurassic Park franchise does explore Isla Sorna in 'The Lost World,' the original film takes place in Isla Nublar.",
         explainWrong: ""
