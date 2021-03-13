@@ -37,11 +37,11 @@ var questionAray = [
 
     // Question Index: 2
     {
-        header: "Which of the Following Options is MOST Correct?:",
+        header: "Select the CORRECT Answer:",
         question: "In the TV series 'Star Trek,' What is the Prime Directive?",
-        options: ["The most regulated rule in Starfleet", 
-                  "A rule that prevents crew members from speaking with certain species",
-                  "A guiding principal to not interfere in the affairs of an underdeveloped species",
+        options: ["The most relaxed rule in Starfleet", 
+                  "A rule that prevents crew members from speaking with certain species such as the Klingons",
+                  "A guiding principal to not interfere in the affairs of an underdeveloped civilization",
                   "A charter of sorts that guides the crew to their next destination for the sake of exploration"],
         answer: "A guiding principal to not interfere in the affairs of an underdeveloped species",
         explainRight: "Right You Are! Starfleet believes that developing civilizations should do so natually and without interference.",
@@ -50,11 +50,11 @@ var questionAray = [
   
     // Question Index: 3
     {
-        header: "Select the CORRECT Answer:",
-        question: "",
-        options: [],
-        answer: "",
-        explainRight: "",
+        header: "Which of the Following Options is MOST Correct?:",
+        question: "Where did the film 'Jurassic Park' fictionally take place?",
+        options: ["Isla Nublar", "Isla Sorna", "Isla Nublar & Isla Sorna", "An island off the US coast"],
+        answer: "Isla Nublar",
+        explainRight: "Good for you! While the Jurassic Park franchise does explore Isla Sorna in 'The Lost World,' the original film takes place in Isla Nublar.",
         explainWrong: ""
     }
 ];
@@ -63,11 +63,14 @@ var questionAray = [
 
 // TESTS for the console in the dev tools
 //OPEN THE CONSOLE TO SEE THE RESULTS!
-console.log("QUESTION:\n---------\n");
-console.log(questionAray[0].header + "\n-------------------------------------------\n" + questionAray[0].question + "\n--------------------------------------------------");
+for (var i = 0; i < questionAray.length; i++) {
+    console.log("QUESTION " + (i+1) + ":\n-----------\n");
+    console.log(questionAray[i].header + "\n--------------------------------------\n" + questionAray[0].question + "\n--------------------------------------------------");
 
-for(var i = 0; i < questionAray[0].options.length; i++) {
-    console.log((i+1) + ". " + questionAray[0].options[i] + "\n--------------------------------------");
+    for(var ii = 0; ii < questionAray[i].options.length; ii++) {
+        console.log((i+1) + ". " + questionAray[i].options[ii] + "\n--------------------------------------");
+    }
+
+    console.log("ANSWER: " + questionAray[i].answer + "\n ");
 }
 
-console.log("ANSWER: " + questionAray[0].answer + "\n ");
