@@ -1,4 +1,11 @@
-# 04 Web APIs: Code Quiz
+# Notes
+plan of action:
+
+1. study the example gif and create an html framework that is more or less the same.
+2. style the html framework with style.css to structer and stack everything correctly.
+3. add questions and functions in js file to make quiz functional. using card classes, container classes as well as multiple ids and 'on click' events.
+
+# Code Quiz
 
 As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
