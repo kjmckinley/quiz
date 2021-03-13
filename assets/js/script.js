@@ -16,18 +16,21 @@ var questionAray = [
         // Answer that matches the correct answer in the above array         
         answer: "Endor is actually not a planet"
     },
+
     {
         header: "TRUE or FALSE:",
         question: "",
         options: [],
         answer: ""
     },
+
     {
         header: "Which Word in the Following Statement is MISSPELLED?:",
         question: "",
         options: [],
         answer: ""
     },
+
     {
         header: "Everything is FALSE in the Following Statement EXCEPT:",
         question: "",
@@ -42,3 +45,14 @@ var questionAray = [
         answer: ""
     }
 ];
+
+
+
+// TESTS for the console in the dev tools
+console.log("QUESTION:\n" + questionAray[0].question + "\n------------------------------------------------");
+
+for(var i = 0; i < questionAray[0].options.length; i++) {
+    console.log((i+1) + ". " + questionAray[0].options[i] + "\n--------------------------------------");
+}
+
+console.log("ANSWER: " + questionAray[0].answer);
