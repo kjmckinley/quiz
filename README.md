@@ -6,7 +6,10 @@ plan of action:
 3. add questions, functions and a timer in js file to make quiz functional. using multiple ids, classes and 'on click' events.
 
 **Play with the idea of being more organized by adding additional html and js files in order to separate the quiz and the high score features.
+
 **Develope with multiple branches for the same reason.
+
+**try and create multiple questions that are randomized each time. 
 
 # Code Quiz
 
