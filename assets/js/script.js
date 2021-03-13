@@ -6,9 +6,15 @@
 var questionAray = [
     {
         header: "Everything is TRUE in The Following Statement EXCEPT:",
-        question: "",
-        options: [],
-        answer: ""
+        question: "In Return of the Jedi, the rebels attack and destroy the revised Death Star’s shield generator on the planet Endor with the help of furry creatures called Ewoks.",
+       // Array of options for the user to select from 
+        options: ["The film was actually called 'The Empire Strikes Back'", 
+                  "The rebels are actually trying to destroy the original Death Star", 
+                  "The rebels were actually trying to destroy the thermal exhaust port",
+                  "Endor is actually not a planet"
+                 ],
+        // Answer that matches the correct answer in the above array         
+        answer: "Endor is actually not a planet"
     },
     {
         header: "TRUE or FALSE:",
