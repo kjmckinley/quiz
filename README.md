@@ -3,7 +3,7 @@ plan of action:
 
 1. study the example gif and create an html framework that is more or less the same.
 2. style the html framework with style.css to structer and stack everything correctly.
-3. add questions and functions in js file to make quiz functional. using card classes, container classes as well as multiple ids and 'on click' events.
+3. add questions, functions and a timer in js file to make quiz functional. using card classes, container classes as well as multiple ids and 'on click' events.
 
 # Code Quiz
 
