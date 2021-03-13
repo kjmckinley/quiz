@@ -1,9 +1,12 @@
+
 // GEEK-BIZ QUIZ
 
 // This .js file is meant to handle and generate the questions in the form of array objects
 
 // Array of objects containing questions
 var questionAray = [
+
+    // Question Index: 0
     {
         // Instructions displayed above the question for better context on how to answer
         header: "Everything is TRUE in The Following Statement EXCEPT:",
@@ -12,39 +15,47 @@ var questionAray = [
        // Array of options for the user to select from 
         options: ["The film was actually called 'The Empire Strikes Back'", 
                   "The rebels are actually trying to destroy the original Death Star", 
-                  "The rebels were actually trying to destroy the thermal exhaust port",
+                  "The rebels were actually trying to destroy the thermal exhaust port of the Death Star",
                   "Endor is actually not a planet"
                  ],
         // Answer that matches the correct answer in the above array         
-        answer: "Endor is actually not a planet"
+        answer: "Endor is actually not a planet",
+        // Explainations of why the user is right or wrong
+        explainRight: "That's Correct! The Rebels and the Ewoks Join Forces to Take Down the Empire on the 'Forest MOON of Endor.'",
+        explainWrong: ""
     },
 
+    // Question Index: 1
     {
         header: "TRUE or FALSE:",
-        question: "",
-        options: [],
-        answer: ""
+        question: "In the game 'Pokemon Red Version', it is essensial for the player to aquire certain items, such as the pokeflute or running shoes, in order to continue in the campaign.\n",
+        options: ["True", "False"],
+        answer: "False",
+        explainRight: "That's Right! Running Shoes Were Not Made Availible to Players Until the Release of 'Pokemon Fired Red Version' for the GameBoy Advanced",
+        explainWrong: "Nope! Try Again"
     },
 
+    // Question Index: 2
     {
-        header: "Which Word in the Following Statement is MISSPELLED?:",
-        question: "",
-        options: [],
-        answer: ""
-    },
-
-    {
-        header: "Everything is FALSE in the Following Statement EXCEPT:",
-        question: "",
-        options: [],
-        answer: ""
+        header: "Which of the Following Options is MOST Correct?:",
+        question: "In the TV series 'Star Trek,' What is the Prime Directive?",
+        options: ["The most regulated rule in Starfleet", 
+                  "A rule that prevents crew members from speaking with certain species",
+                  "A guiding principal to not interfere in the affairs of an underdeveloped species",
+                  "A charter of sorts that guides the crew to their next destination for the sake of exploration"],
+        answer: "A guiding principal to not interfere in the affairs of an underdeveloped species",
+        explainRight: "Right You Are! Starfleet believes that developing civilizations should do so natually and without interference.",
+        explainWrong: ""
     },
   
+    // Question Index: 3
     {
         header: "Select the CORRECT Answer:",
         question: "",
         options: [],
-        answer: ""
+        answer: "",
+        explainRight: "",
+        explainWrong: ""
     }
 ];
 
@@ -52,10 +63,11 @@ var questionAray = [
 
 // TESTS for the console in the dev tools
 //OPEN THE CONSOLE TO SEE THE RESULTS!
-console.log("QUESTION:\n---------\n" + questionAray[0].header + "\n-----------------------------------------------------\n" + questionAray[0].question + "\n-----------------------------------------------------");
+console.log("QUESTION:\n---------\n");
+console.log(questionAray[0].header + "\n-------------------------------------------\n" + questionAray[0].question + "\n--------------------------------------------------");
 
 for(var i = 0; i < questionAray[0].options.length; i++) {
     console.log((i+1) + ". " + questionAray[0].options[i] + "\n--------------------------------------");
 }
 
-console.log("ANSWER: " + questionAray[0].answer);
+console.log("ANSWER: " + questionAray[0].answer + "\n ");

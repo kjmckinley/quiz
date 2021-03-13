@@ -8,13 +8,17 @@
     box-sizing: border-box;
 }
 
+p {
+    padding-top: 15px;
+}
+
 /* styling for mainQuizBox class */
 .mainQuizBox {
     position: absolute;
     text-align: center;
     margin: 5% 20%;
-    width: 60%;
-    height: 60%;
+    width: 500px;
+    height: 500px;
     border: 10px solid rgb(172, 60, 60);
     border-radius: 10px;
 }
@@ -33,8 +37,7 @@
     margin: 20px;
 }
 
-.mainQuizBox #timer {
+#timer {
     float: right;
     margin: 5px;
 }
-
