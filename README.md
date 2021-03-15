@@ -1,3 +1,21 @@
+# Geek-Biz Quiz
+This application is meant to serve as an example of a timed quiz using JavaScript.
+
+## Links
+HTML: https://github.com/kjmckinley/quiz.git
+SSH: git@github.com:kjmckinley/quiz.git
+Deployed Link: https://kjmckinley.github.io/quiz/
+
+WHEN the user presses the start button
+THEN the timer will start and the question will be displayed
+IF the user selects the correct answer
+THEN the screen will display a breif reason why they where correct.
+IF the user clicks on "next question"
+THEN the screen will display the next question.
+WHEN the user has completed all question
+THEN the user will be presented with an end screen showing their score.
+
+
 # Notes
 plan of action:
 
@@ -11,9 +29,6 @@ plan of action:
 
 **try and create multiple questions that are randomized each time. 
 
-# Code Quiz
-
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
 ## User Story
 
@@ -42,14 +57,3 @@ THEN I can save my initials and score
 The following animation demonstrates the application functionality:
 
 ![code quiz](./Assets/04-web-apis-homework-demo.gif)
-
-### Review
-
-You are required to submit the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
