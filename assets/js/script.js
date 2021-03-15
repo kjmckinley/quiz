@@ -93,16 +93,17 @@ var quizQuestion = document.querySelector("#quizQuestion");
 var mainQuizBox = document.querySelector("#mainQuizBox");
 
 // Variables that will hold values for the time and deductions for wrong answers
-var timeLeft = 120;
+var timeLeft = 10;
 var deduction = 0;
 var getNum = 0;
+var newElement = document.createElement("ul");
 
 // Event listener to trigger startClock when the start button is clicked
 startClock.addEventListener("click", function () {
     if (getNum === 0) {
         getNum = setInterval(function(){
-            timeLeft--;
             remainingTime.textContent = "Time Left: " + timeLeft;
+            timeLeft--;
             console.log("Time Left: " +  timeLeft);
 
             if (timeLeft <= 0) {
@@ -111,9 +112,22 @@ startClock.addEventListener("click", function () {
             }
         }, 1000);
     }
+    displayQuestion(questionObjIndex);
 });
+
+
 
 var displayQuestion = function(questionObjIndex) {
     quizQuestion.innerHTML = "";
+    newElement.innerHTML = "";
+
+    for (var i = 0; i < quizQuestion.length; i++) {
+        var currentHeader = quizQuestion[questionObjIndex].header;
+        var currentQuestion = quizQuestion[questionObjIndex].question;
+        var currentOptions = quizQuestion[questionObjIndex].options;
+
+        mainQuizBox.textContent = currentHeader;
+        mainQuizBox.textContent = currentQuestion;
+    }
 }
 
