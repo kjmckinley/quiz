@@ -84,6 +84,7 @@ var remainingTime = 0;
 var totalScore = 0;
 var questionObjIndex = 0;
 
+
 // Declaring variables that will use the query selector to get ids from index.html
 // Variable name will be the same as the id.
 var timer = document.querySelector("#timer");
@@ -94,8 +95,20 @@ var mainQuizBox = document.querySelector("#mainQuizBox");
 // Variables that will hold values for the time and deductions for wrong answers
 var timeLeft = 120;
 var deduction = 0;
+var getNum = 0;
 
 // Event listener to trigger startClock when the start button is clicked
 startClock.addEventListener("click", function () {
+    if (getNum === 0) {
+        getNum = setInterval(function(){
+            timeLeft--;
+            remainingTime = "Time Left: " + timeLeft;
 
+            if (timeLeft <= 0) {
+                clearInterval(getNum);
+                remainingTime.textContent = "Time is Up!!";
+            }
+        }, 1000);
+    }
 });
+
