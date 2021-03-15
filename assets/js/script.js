@@ -73,7 +73,7 @@ for (var i = 0; i < questionAray.length; i++) {
     console.log(questionAray[i].header + "\n--------------------------------------\n" + questionAray[0].question + "\n--------------------------------------------------");
 
     for(var ii = 0; ii < questionAray[i].options.length; ii++) {
-        console.log((i+1) + ". " + questionAray[i].options[ii] + "\n--------------------------------------");
+        console.log((ii+1) + ". " + questionAray[i].options[ii] + "\n--------------------------------------");
     }
 
     console.log("ANSWER: " + questionAray[i].answer + "\n ");
@@ -81,7 +81,7 @@ for (var i = 0; i < questionAray.length; i++) {
 
 // Variables that will track the progress and iteration of the time, score and index of the questions, respectively
 var remainingTime = 0;
-var score = 0;
+var totalScore = 0;
 var questionObjIndex = 0;
 
 // Declaring variables that will use the query selector to get ids from index.html
@@ -97,5 +97,5 @@ var deduction = 0;
 
 // Event listener to trigger startClock when the start button is clicked
 startClock.addEventListener("click", function () {
-    
+
 });
