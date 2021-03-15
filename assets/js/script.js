@@ -102,7 +102,8 @@ startClock.addEventListener("click", function () {
     if (getNum === 0) {
         getNum = setInterval(function(){
             timeLeft--;
-            remainingTime = "Time Left: " + timeLeft;
+            remainingTime.textContent = "Time Left: " + timeLeft;
+            console.log("Time Left: " +  timeLeft);
 
             if (timeLeft <= 0) {
                 clearInterval(getNum);
@@ -111,4 +112,8 @@ startClock.addEventListener("click", function () {
         }, 1000);
     }
 });
+
+var displayQuestion = function(questionObjIndex) {
+    quizQuestion.innerHTML = "";
+}
 
