@@ -32,7 +32,7 @@ var questionAray = [
         options: ["True", "False"],
         answer: "False",
         explainRight: "That's Right! Running Shoes Were Not Made Availible to Players Until the Release of 'Pokemon Fired Red Version' for the GameBoy Advanced",
-        explainWrong: "Nope! Try Again"
+        explainWrong: "Nope!"
     },
 
     // Question Index: 2
@@ -67,7 +67,7 @@ var questionAray = [
 
 
 // TESTS for the console in the dev tools
-//OPEN THE CONSOLE TO SEE THE RESULTS!
+// OPEN THE CONSOLE TO SEE THE RESULTS!
 for (var i = 0; i < questionAray.length; i++) {
     console.log("QUESTION " + (i+1) + ":\n-----------\n");
     console.log(questionAray[i].header + "\n--------------------------------------\n" + questionAray[0].question + "\n--------------------------------------------------");
@@ -79,3 +79,23 @@ for (var i = 0; i < questionAray.length; i++) {
     console.log("ANSWER: " + questionAray[i].answer + "\n ");
 }
 
+// Variables that will track the progress and iteration of the time, score and index of the questions, respectively
+var remainingTime = 0;
+var score = 0;
+var questionObjIndex = 0;
+
+// Declaring variables that will use the query selector to get ids from index.html
+// Variable name will be the same as the id.
+var timer = document.querySelector("#timer");
+var startClock = document.querySelector("#startClock");
+var quizQuestion = document.querySelector("#quizQuestion");
+var mainQuizBox = document.querySelector("#mainQuizBox");
+
+// Variables that will hold values for the time and deductions for wrong answers
+var timeLeft = 120;
+var deduction = 0;
+
+// Event listener to trigger startClock when the start button is clicked
+startClock.addEventListener("click", function () {
+    
+});
