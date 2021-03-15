@@ -15,21 +15,6 @@ THEN the screen will display the next question.
 WHEN the user has completed all question
 THEN the user will be presented with an end screen showing their score.
 
-
-# Notes
-plan of action:
-
-1. study the example gif and create an html framework that is more or less the same.
-2. style the html framework with style.css to structer and stack everything correctly.
-3. add questions, functions and a timer in js file to make quiz functional. using multiple ids, classes and 'on click' events.
-
-**Play with the idea of being more organized by adding additional html and js files in order to separate the quiz and the high score features.
-
-**Develope with multiple branches for the same reason.
-
-**try and create multiple questions that are randomized each time. 
-
-
 ## User Story
 
 ```
@@ -57,3 +42,16 @@ THEN I can save my initials and score
 The following animation demonstrates the application functionality:
 
 ![code quiz](./Assets/04-web-apis-homework-demo.gif)
+
+## Notes
+plan of action:
+
+1. study the example gif and create an html framework that is more or less the same.
+2. style the html framework with style.css to structer and stack everything correctly.
+3. add questions, functions and a timer in js file to make quiz functional. using multiple ids, classes and 'on click' events.
+
+**Play with the idea of being more organized by adding additional html and js files in order to separate the quiz and the high score features.
+
+**Develope with multiple branches for the same reason.
+
+**try and create multiple questions that are randomized each time. 
