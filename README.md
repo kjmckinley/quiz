@@ -6,7 +6,7 @@ This application is meant to serve as an example of a timed quiz using JavaScrip
 HTML: https://github.com/kjmckinley/quiz.git
 Deployed Link: https://kjmckinley.github.io/quiz/
 ```
-# Functionality
+## Functionality
 ```
 WHEN the user presses the start button
 THEN the timer will start and the question will be displayed
