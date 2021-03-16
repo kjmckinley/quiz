@@ -5,11 +5,15 @@ This application is meant to serve as an example of a timed quiz using JavaScrip
 ```
 WHEN the user presses the start button
 THEN the timer will start and the question will be displayed
-IF the user selects the correct answer
-THEN the screen will display a breif reason why they where correct.
-IF the user clicks on "next question"
+WHEN the user selects the correct answer
+THEN the screen will display a breif reason why they where correct and their score goes up.
+WHEN the user clicks on "next question"
 THEN the screen will display the next question.
+WHEN the user guesses incorrectly
+THEN the screen will display a brief reason why they were wrong and time is subtracted from them.
 WHEN the user has completed all questions
+THEN the user will be presented with an end screen showing their score.
+WHEN time is up
 THEN the user will be presented with an end screen showing their score.
 ```
 
@@ -25,22 +29,6 @@ THEN the user will be presented with an end screen showing their score.
 AS A coding bootcamp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
-```
-
-## Acceptance Criteria
-
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
 ```
 
 The following animation demonstrates the application functionality:
