@@ -129,5 +129,13 @@ var displayQuestion = function(questionObjIndex) {
         mainQuizBox.textContent = currentHeader;
         mainQuizBox.textContent = currentQuestion;
     }
+
+    currentOptions.forEach(function (newQuestion) {
+        var questionOption = document.createElement("li");
+        questionOption.textContent = newQuestion;
+        quizQuestion.appendChild(newElement);
+        newElement.appendChild(questionOption);
+        // questionOption.addEventListener("click", (compare));
+    })
 }
 
