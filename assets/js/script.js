@@ -112,30 +112,30 @@ startClock.addEventListener("click", function () {
             }
         }, 1000);
     }
-    displayQuestion(questionObjIndex);
+    // displayQuestion(questionObjIndex);
 });
 
 
 
-var displayQuestion = function(questionObjIndex) {
-    quizQuestion.innerHTML = "";
-    newElement.innerHTML = "";
+// var displayQuestion = function(questionObjIndex) {
+//     quizQuestion.innerHTML = "";
+//     newElement.innerHTML = "";
 
-    for (var i = 0; i < quizQuestion.length; i++) {
-        var currentHeader = quizQuestion[questionObjIndex].header;
-        var currentQuestion = quizQuestion[questionObjIndex].question;
-        var currentOptions = quizQuestion[questionObjIndex].options;
+//     for (var i = 0; i < quizQuestion.length; i++) {
+//         var currentHeader = quizQuestion[questionObjIndex].header;
+//         var currentQuestion = quizQuestion[questionObjIndex].question;
+//         var currentOptions = quizQuestion[questionObjIndex].options;
 
-        mainQuizBox.textContent = currentHeader;
-        mainQuizBox.textContent = currentQuestion;
-    }
+//         mainQuizBox.textContent = currentHeader;
+//         mainQuizBox.textContent = currentQuestion;
+//     }
 
-    currentOptions.forEach(function (newQuestion) {
-        var questionOption = document.createElement("li");
-        questionOption.textContent = newQuestion;
-        quizQuestion.appendChild(newElement);
-        newElement.appendChild(questionOption);
-        // questionOption.addEventListener("click", (compare));
-    })
-}
+    // currentOptions.forEach(function (newQuestion) {
+    //     var questionOption = document.createElement("li");
+    //     questionOption.textContent = newQuestion;
+    //     quizQuestion.appendChild(newElement);
+    //     newElement.appendChild(questionOption);
+    //     // questionOption.addEventListener("click", (compare));
+    // })
+// }
 
