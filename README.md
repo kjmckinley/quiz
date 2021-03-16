@@ -2,10 +2,10 @@
 This application is meant to serve as an example of a timed quiz using JavaScript.
 
 ## Links
-```
-HTML: https://github.com/kjmckinley/quiz.git
-Deployed Link: https://kjmckinley.github.io/quiz/
-```
+
+* [GitHub Repo HTTPS] (https://github.com/kjmckinley/quiz.git)
+* [Deployed Link] (https://kjmckinley.github.io/quiz/)
+
 ## Functionality
 ```
 WHEN the user presses the start button
