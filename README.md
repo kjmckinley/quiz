@@ -2,9 +2,9 @@
 This application is meant to serve as an example of a timed quiz using JavaScript.
 
 ## Links
-HTML: https://github.com/kjmckinley/quiz.git
-SSH: git@github.com:kjmckinley/quiz.git
-Deployed Link: https://kjmckinley.github.io/quiz/
+### HTML: https://github.com/kjmckinley/quiz.git
+### SSH: git@github.com:kjmckinley/quiz.git
+### Deployed Link: https://kjmckinley.github.io/quiz/
 
 WHEN the user presses the start button
 THEN the timer will start and the question will be displayed
