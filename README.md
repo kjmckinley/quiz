@@ -31,7 +31,7 @@ I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 ```
 
-The following animation demonstrates the application functionality:
+The following animation demonstrates the application functionality (the gif below is just an example, not a live version of this repository)
 
 ![code quiz](./assets/04-web-apis-homework-demo.gif)
 
