@@ -33,7 +33,7 @@ SO THAT I can gauge my progress compared to my peers
 
 The following animation demonstrates the application functionality:
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+![code quiz](./assets/04-web-apis-homework-demo.gif)
 
 ## Notes
 plan of action:
