@@ -3,8 +3,8 @@ This application is meant to serve as an example of a timed quiz using JavaScrip
 
 ## Links
 
-* [GitHub Repo HTTPS] (https://github.com/kjmckinley/quiz.git)
-* [Deployed Link] (https://kjmckinley.github.io/quiz/)
+* [GitHub] (https://github.com/kjmckinley/quiz.git)
+* [Deployed] (https://kjmckinley.github.io/quiz/)
 
 ## Functionality
 ```
