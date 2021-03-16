@@ -2,10 +2,12 @@
 This application is meant to serve as an example of a timed quiz using JavaScript.
 
 ## Links
-### HTML: https://github.com/kjmckinley/quiz.git
-### SSH: git@github.com:kjmckinley/quiz.git
-### Deployed Link: https://kjmckinley.github.io/quiz/
-
+```
+HTML: https://github.com/kjmckinley/quiz.git
+Deployed Link: https://kjmckinley.github.io/quiz/
+```
+# Functionality
+```
 WHEN the user presses the start button
 THEN the timer will start and the question will be displayed
 IF the user selects the correct answer
@@ -14,6 +16,7 @@ IF the user clicks on "next question"
 THEN the screen will display the next question.
 WHEN the user has completed all question
 THEN the user will be presented with an end screen showing their score.
+```
 
 ## User Story
 
