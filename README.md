@@ -1,11 +1,6 @@
 # Geek-Biz Quiz
 This application is meant to serve as an example of a timed quiz using JavaScript.
 
-## Links
-
-* [GitHub Repo HTTPS](https://github.com/kjmckinley/quiz.git)
-* [Deployed Link](https://kjmckinley.github.io/quiz/)
-
 ## Functionality
 ```
 WHEN the user presses the start button
@@ -14,9 +9,15 @@ IF the user selects the correct answer
 THEN the screen will display a breif reason why they where correct.
 IF the user clicks on "next question"
 THEN the screen will display the next question.
-WHEN the user has completed all question
+WHEN the user has completed all questions
 THEN the user will be presented with an end screen showing their score.
 ```
+
+## Links
+
+* [GitHub Repo HTTPS](https://github.com/kjmckinley/quiz.git)
+* [Deployed Link](https://kjmckinley.github.io/quiz/)
+
 
 ## User Story
 
