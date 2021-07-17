@@ -10,7 +10,7 @@ const questionContainerEl = document.getElementById ('question-container')
 const questionEl = document.getElementById ('question')
 const answerBtnEl = document.getElementById('select-buttons')
 
-var count = 0;
+var score = 0;
 
 //let variables initially set to undefined to be used to jumble the questions
 //so that they don't appear in the same order every time.
@@ -106,13 +106,21 @@ function statusWipe(element) {
 // adds the elements 'correct' or 'incorrect' to change the screen color
 function setStatus(element, correct) {
 
-    statusWipe(element)
-
     if (correct) {
+        keepScore();
+        
         element.classList.add('correct')
-    } else {
+    }else {
         element.classList.add('incorrect')
     }
+
+    statusWipe(element)
+}
+
+// score keeper
+function keepScore () {
+    score++;
+    console.log(score);
 }
 
 //array of actual questions
