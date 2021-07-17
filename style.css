@@ -23,15 +23,20 @@ body {
     width: 100vw;
     height: 100vh;
     justify-content: center;
-    align-items: center;
     background-color: hsl(var(--hue), 100%, 20%);
   }
+
+  
 
 body.correct {
     --hue: var(--hue-correct);
 }
 body.incorrect {
     --hue: var(--hue-incorrect);
+}
+
+.timer {
+    color: white;
 }
 
 .container {
@@ -41,6 +46,7 @@ body.incorrect {
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+    align-self: center;
 }
 
 .btn {
