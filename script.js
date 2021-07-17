@@ -10,6 +10,8 @@ const questionContainerEl = document.getElementById ('question-container')
 const questionEl = document.getElementById ('question')
 const answerBtnEl = document.getElementById('select-buttons')
 
+var count = 0;
+
 //let variables initially set to undefined to be used to jumble the questions
 //so that they don't appear in the same order every time.
 let randomQuestion, currentIndex 
@@ -45,11 +47,13 @@ function nextQuestion() {
 function revealQuestion(question) {
     //populates question
     questionEl.innerText = question.question
-    //populates coresponding possible answers through a loop.
+
+    //populates corresponding possible answers through a loop.
     question.answers.forEach(answer => {
         const button = document.createElement('button')
         button.innerText = answer.content
         button.classList.add('btn')
+
         //operation to verify if the answer is right or wrong
         if (answer.correct) {
             button.dataset.correct = answer.correct
@@ -75,7 +79,7 @@ function makeSelection(e) {
     const btnSelection = e.target
     const correct = btnSelection.dataset.correct
 
-    //???
+    //
     setStatus(document.body, correct)
     Array.from(answerBtnEl.children).forEach (button => {
         setStatus(button, button.dataset.correct)
@@ -92,21 +96,23 @@ function makeSelection(e) {
     nextBtn.classList.remove('hide')
 }
 
+// remove colors when user moves on to the next question
+function statusWipe(element) {
+    element.classList.remove('correct')
+    element.classList.remove('incorrect')
+}
+
+
 // adds the elements 'correct' or 'incorrect' to change the screen color
 function setStatus(element, correct) {
 
     statusWipe(element)
+
     if (correct) {
         element.classList.add('correct')
     } else {
         element.classList.add('incorrect')
     }
-}
-
-// remove colors when user moves on to the next question
-function statusWipe(element) {
-    element.classList.remove('correct')
-    element.classList.remove('incorrect')
 }
 
 //array of actual questions
