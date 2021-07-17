@@ -54,7 +54,7 @@ body.incorrect {
     height: 40px;
 }
 
-
+/* highlights the border of the button when the user hovers over with cursor */
 .btn:hover {
     border-color: black;
 }
