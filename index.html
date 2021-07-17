@@ -1,69 +1,54 @@
 <!-- GEEK-BIZ QUIZ (Working Title) -->
 
 <!-- This HTML document is meant to provide the basic framework for the quiz feature -->
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 
+  <head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- added automatically in the boilerplate html but will make content responsive to screen size -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- relative link to style.css -->
-    <link rel ="stylesheet" href="./assets/css/style.css" />
+    <title>Disney Fan Quiz</title>
 
-    <title>Geek-Biz Quiz</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src = "script.js"></script>
 
+    <link rel="icon" 
+          href="https://image.shutterstock.com/image-vector/disney-park-playland-isolated-vector-260nw-1533621227.jpg"
+          type="image">
 
-<body>
-    <!-- add a link that will take the user to the 'high scores' page -->
+  </head>
+
+  <body>
+
+    <!-- add a timer div in the top corner
     <a href ="scores.html">High Scores</a>
-    
-    <!-- main container div that will house the questions and the option buttons -->
-    <div class="mainQuizBox">
+    <br />
+    <div id="timer"></div> -->
 
-        <!-- add a timer div in the top corner -->
-        <div id="timer"></div>
-        <br />
-        
-        <!-- add a question div that will contain each question -->
-        <div id="quizQuestion">
-            <!-- intro header -->
-            <h1>Geek-Biz Quiz</h1>
-
-            <!-- quiz info and instructions -->
-            <p>
-                So, you think you're a super geek? Well then this quiz shouldn't be a problem!... 
-                Or should it..?
-            </p>
-            <p>
-                Try your best to answer as many of these questions correctly as possible in the 
-                alloted time given. Bonus time for every correct answer!
-            </p>
-            <p>
-                *** Be sure to read the instructions of each question carefully before skipping 
-                straight to the question and possible answers! ***
-            </p>
-            <p>
-                Are you a clever girl? Or a half-witted, scruffy-looking nerf herder?
-                <br />
-                Go ahead and smack that 'Start' button below!
-            </p>
-
-            <!-- unordered list of possible answers -->
-            <ul id="options"></ul>
-
-            <!-- start button -->
-            <button id="startClock">START!</button>
+      <!-- container template that holds all questions and button -->
+    <div class = "container">
+      <!-- intro header -->
+      <div id="title"><h1>Disney Quiz</h1></div>
+      <div id="question-container" class="hide">
+        <div id="question">Trivia Question</div>
+        <div id="select-buttons" class="btn-grid">
+          <button class="btn">Option1</button>
+          <button class="btn">Option2</button>
+          <button class="btn">Option3</button>
+          <button class="btn">Option4</button>
         </div>
-
-    </div>
-    <!-- relative link to script.js -->
-    <script src="./assets/js/script.js"></script>
-</body>
+      </div>
+      
+      <!-- next button will remain hidden until needed, only start is visible -->
+      <div class="controls">
+        <button id="start-btn start-clock" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+      </div>
+     </div>
+  </body>
 
 </html>
