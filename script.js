@@ -13,6 +13,8 @@ const answerBtnEl = document.getElementById('select-buttons')
 var score = 0;
 
 var timeLeft = 45;
+
+// display timer to the user
 timer.textContent = "Time Left:" + timeLeft;
 
 //let variables initially set to undefined to be used to jumble the questions
@@ -32,21 +34,24 @@ nextBtn.addEventListener('click', () => {
 
 // fubcrtion that runs the timer
 function runTimer() {
+
     var timer = document.querySelector("#timer")
     timeLeft--;
+
     if (timeLeft > 0) {
         setTimeout(runTimer, 1000)
     } else if (timeLeft <= 0) {
         timeLeft = 0;
         // saveScore();
     }
+
     timer.textContent = "Time Left:" + timeLeft;
-    //console.log(timeLeft);
 }
 
 
 // function that reveals a question and options after start has been pressed.
 function startGame() {
+
     startBtn.classList.add('hide')
 
     runTimer();
@@ -59,12 +64,14 @@ function startGame() {
     nextQuestion()
 }
 
+// goes to the next question in the array
 function nextQuestion() {
     //function call to set everything back to default state
     refreshQuestion()
     revealQuestion(randomQuestion[currentIndex])
 }
 
+// displays question to the user
 function revealQuestion(question) {
     //populates question
     questionEl.innerText = question.question
