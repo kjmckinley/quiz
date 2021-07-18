@@ -45,7 +45,7 @@ function runTimer() {
         // saveScore();
     }
 
-    timer.textContent = "Time Left:" + timeLeft;
+    timer.textContent = "Time Left: " + timeLeft;
 }
 
 
