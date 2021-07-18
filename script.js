@@ -12,6 +12,9 @@ const answerBtnEl = document.getElementById('select-buttons')
 
 var score = 0;
 
+var timeLeft = 45;
+timer.textContent = "Time Left:" + timeLeft;
+
 //let variables initially set to undefined to be used to jumble the questions
 //so that they don't appear in the same order every time.
 let randomQuestion, currentIndex 
@@ -26,9 +29,27 @@ nextBtn.addEventListener('click', () => {
     nextQuestion()
 })
 
+
+// fubcrtion that runs the timer
+function runTimer() {
+    var timer = document.querySelector("#timer")
+    timeLeft--;
+    if (timeLeft > 0) {
+        setTimeout(runTimer, 1000)
+    } else if (timeLeft <= 0) {
+        timeLeft = 0;
+        // saveScore();
+    }
+    timer.textContent = "Time Left:" + timeLeft;
+    //console.log(timeLeft);
+}
+
+
 // function that reveals a question and options after start has been pressed.
 function startGame() {
     startBtn.classList.add('hide')
+
+    runTimer();
 
     randomQuestion = questions.sort(() => Math.random() - .5)
     currentIndex = 0
@@ -96,18 +117,12 @@ function makeSelection(e) {
     nextBtn.classList.remove('hide')
 }
 
-// remove colors when user moves on to the next question
-function statusWipe(element) {
-    element.classList.remove('correct')
-    element.classList.remove('incorrect')
-}
-
 
 // adds the elements 'correct' or 'incorrect' to change the screen color
 function setStatus(element, correct) {
 
     if (correct) {
-        keepScore();
+        // keepScore();
         
         element.classList.add('correct')
     }else {
@@ -115,6 +130,12 @@ function setStatus(element, correct) {
     }
 
     statusWipe(element)
+}
+
+// remove colors when user moves on to the next question
+function statusWipe(element) {
+    element.classList.remove('correct')
+    element.classList.remove('incorrect')
 }
 
 // score keeper
