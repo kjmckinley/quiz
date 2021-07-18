@@ -100,7 +100,7 @@ function makeSelection(e) {
     const btnSelection = e.target
     const correct = btnSelection.dataset.correct
 
-    //
+    //???
     setStatus(document.body, correct)
     Array.from(answerBtnEl.children).forEach (button => {
         setStatus(button, button.dataset.correct)
@@ -121,15 +121,13 @@ function makeSelection(e) {
 // adds the elements 'correct' or 'incorrect' to change the screen color
 function setStatus(element, correct) {
 
+    statusWipe(element)
+
     if (correct) {
-        // keepScore();
-        
         element.classList.add('correct')
-    }else {
+    } else {
         element.classList.add('incorrect')
     }
-
-    statusWipe(element)
 }
 
 // remove colors when user moves on to the next question
