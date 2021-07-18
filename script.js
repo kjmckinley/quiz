@@ -107,7 +107,6 @@ function makeSelection(e) {
     const btnSelection = e.target
     const correct = btnSelection.dataset.correct
 
-    //???
     setStatus(document.body, correct)
     Array.from(answerBtnEl.children).forEach (button => {
         setStatus(button, button.dataset.correct)
