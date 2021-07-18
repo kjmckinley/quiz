@@ -1,5 +1,7 @@
+
 # Disney Quiz
 This application is meant to serve as an example of a timed quiz using JavaScript.
+
 
 ## User Story
 
@@ -18,8 +20,6 @@ The following animation demonstrates the application functionality:
 
 * [GitHub Repo HTTPS](https://github.com/kjmckinley/quiz.git)
 * [Deployed Link](https://kjmckinley.github.io/quiz/)
-
-
 
 
 ## Resources
