@@ -29,3 +29,5 @@ The following animation demonstrates the application functionality:
 
 ## Contributors
 - Kyle McKinley - GitHub: [kjmckinley](https://github.com/kjmckinley)
+
+<!-- Note to Dev: Need to finish scoring -->
